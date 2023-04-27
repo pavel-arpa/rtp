@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4db6ff33.css",
+    "main.js": "/static/js/main.897794f2.js",
+    "static/js/787.22ebe5a8.chunk.js": "/static/js/787.22ebe5a8.chunk.js",
+    "static/media/_list_chars.svg": "/static/media/_list_chars.9686e2b5ad28ac62ca8d518b76deae6f.svg",
+    "static/media/charsBlockBig.svg": "/static/media/charsBlockBig.ea11a5faab92e28b70fd174eaf146102.svg",
+    "static/media/create_cart.svg": "/static/media/create_cart.1e23fbd70c601d6a1e4579a16df8505a.svg",
+    "static/media/charsBlock.svg": "/static/media/charsBlock.542c61e1930d28c471e374a29dec3efd.svg",
+    "static/media/extra_actions.svg": "/static/media/extra_actions.a0a0c43e4310491ef1e5c4ea6fb8cc80.svg",
+    "static/media/ok.svg": "/static/media/ok.f9730e36272a9bbc9ef501d4f123b265.svg",
+    "static/media/vk.svg": "/static/media/vk.ee81171a2376298716d71aaca0c9b2f6.svg",
+    "static/media/img_placeholder_big.svg": "/static/media/img_placeholder_big.6f808b7bc24ee6f3bb03a361881fd5fe.svg",
+    "static/media/no_image.svg": "/static/media/no_image.06e61a5ed0a3c7d97a7ebd55c1f810a0.svg",
+    "index.html": "/index.html",
+    "static/media/cart.svg": "/static/media/cart.0c0a5b3eb9805ad5bf7c283e25b2d8a6.svg",
+    "static/media/tg.svg": "/static/media/tg.566187ed84d8528d4727b24cf12f8c62.svg",
+    "static/media/phone.svg": "/static/media/phone.72c75506fafbdc78481e7e65864aa8a2.svg",
+    "static/media/mail.svg": "/static/media/mail.e2b2668e5cf498d1d6578dcd31a46c0b.svg",
+    "static/media/menu.svg": "/static/media/menu.2d19bb21195aa64626c0276f9ffe261f.svg",
+    "static/media/plus.svg": "/static/media/plus.7f3c4bcac522400b474f4b120ba1bf26.svg",
+    "static/media/minus.svg": "/static/media/minus.9b1d04fe6ca3ac1195d9bac4078cea28.svg",
+    "main.4db6ff33.css.map": "/static/css/main.4db6ff33.css.map",
+    "main.897794f2.js.map": "/static/js/main.897794f2.js.map",
+    "787.22ebe5a8.chunk.js.map": "/static/js/787.22ebe5a8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4db6ff33.css",
+    "static/js/main.897794f2.js"
+  ]
+}
