@@ -1,38 +1,65 @@
 .App {
-  text-align: center;
+    background: #F6F6FA;
+    margin-top: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+footer {
+    background-color: #42474D;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer .contact .my-10 .mt-5 a:first-child,
+footer .contact .my-10 .mt-5 a:last-child {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+footer .contact .my-10 span:first-child {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #828D99;
 }
 
-.App-link {
-  color: #61dafb;
+footer .contact .my-10 span:last-child {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer .contact .cop-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    color: #C3D3E5;
+}
+
+footer .menu h5.title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    border-bottom: 1px solid #828D99;
+    padding-bottom: 10px;
+}
+
+footer .menu ul li a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 13px;
+    color: #FFFFFF;
+    display: block;
+    padding-bottom: 20px;
+}
+
+footer .third a {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    color: #C3D3E5;
 }

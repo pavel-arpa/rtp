@@ -1,0 +1,81 @@
+@use '../../global/colors'
+
+.header
+    position: fixed
+    z-index: 1000
+    top: 0
+    left: 0
+    right: 0
+    display: flex
+    justify-content: center
+    height: 156px
+    width: 100%
+    background: colors.$bg-color
+    border-radius: 156px
+    &__inner
+        display: grid
+        grid-template-columns: 1fr 820px 1fr
+        gap: 24px
+        width: 100%
+        max-width: 1540px
+
+.logoBox
+    display: flex
+    align-items: center
+    height: 100%
+    color: white
+    font-size: 12px
+    &__wrapper
+        display: flex
+        align-items: center
+        gap: 13px
+        height: 52px
+    &__line
+        height: 50px
+        width: 1px
+        background-color: #fff
+
+.links
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.anchors
+    display: flex
+    justify-content: space-between
+    font-size: 20px
+    margin-top: 25px
+    color: rgba(white, 0.5)
+    & span:hover
+        color: white
+        cursor: pointer
+
+.phone
+    display: flex
+    align-items: center
+    gap: 13px
+    margin-bottom: 38px
+    color: white
+    &__number
+        font-size: 24px
+        font-weight: 700
+    &__line
+        height: 30px
+        width: 1px
+        background-color: #fff
+    &__text
+        font-size: 12px
+        text-align: right
+
+.actions
+    display: flex
+    flex-direction: column
+    align-items: end
+    justify-content: space-between
+    color: white
+    &__button
+        margin-top: 22px
+    &__email
+        font-size: 24px
+        font-weight: 700
+        margin-bottom: 38px
