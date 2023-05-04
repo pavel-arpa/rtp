@@ -98,7 +98,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="third col-span-2 flex items-end">
-                    <a href="#">Политика конфеденциальности</a>
+                    <a href="#">Политика конфиденциальности</a>
                 </div>
             </div>
             {/* <div className="cookie py-5 border-t border-gray-100 flex flex-wrap justify-center items-center space-x-3 px-5">

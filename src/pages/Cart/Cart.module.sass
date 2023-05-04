@@ -3,12 +3,12 @@
     width: 100%
     max-width: 1540px
     margin: 0 auto
-    
+
 .cartWrapper
     display: flex
     gap: 30px
     align-items: start
-    
+
 .mayLike
     display: flex
     gap: 30px
@@ -23,7 +23,7 @@
 .buy
     background-color: #e9f0fe
     padding: 20px
-    width: 450px
+    min-width: 450px
     border-radius: 8px
     display: flex
     flex-direction: column
@@ -31,7 +31,52 @@
     & span
         color: #42474D
         font-size: 14px
+    & hr
+        border-color: #42474D
+
+.titleCart
+    display: flex
+    justify-content: space-between
+    & b
+        font-size: 20px
+        color: #42474D
+    & span
+        font-size: 14px
+        color: #828D99
+
+.list
+    display: flex
+    flex-direction: column
+    gap: 12px
+    & *
+        color: #42474D
+        font-weight: 700
+    &__item
+        display: flex
+        justify-content: space-between
+        font-size: 16px
+
 .toPay
     display: flex
     justify-content: space-between
     align-items: center
+    font-size: 20px
+    color: #224386
+
+.promocode
+    display: flex
+    flex-direction: column
+    gap: 8px
+    & input
+        background-color: #fff
+        border-radius: 4px
+        border: none
+    & button
+        background-color: rgb(130, 141, 153)
+        &:hover
+            background-color: rgb(130, 141, 153, 0.8)
+
+button.summary
+    background-color: #828D99
+    &:hover
+        background-color: rgb(130, 141, 153, 0.8)

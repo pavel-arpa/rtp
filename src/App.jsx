@@ -11,6 +11,9 @@ import {
 import Error from './pages/Error/Error';
 import Search from './pages/Search/Search';
 import Cart from './pages/Cart/Cart';
+import System from './pages/System/System';
+import Catalog from './pages/Catalog/Catalog';
+import Home from './pages/Home/Home';
 
 
 
@@ -30,8 +33,19 @@ const Root = () => {
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/system",
+    element: <System />,
+  },
+  {
+    path: "/product",
     element: <Product />,
-    errorElement: <Error />,
+  },
+  {
+    path: "/catalog",
+    element: <Catalog />,
   },
   {
     path: "404",
@@ -49,10 +63,12 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  const path = window.location.href.split('/').slice(-1)[0]
+
   return (
     <ChakraProvider theme={theme}>
 
-      <div className="App">
+      <div className={path === '' ? "AppWhite" : 'App'}>
         <div style={{ height: '156px' }}></div>
         <Header />
         <div>

@@ -1,0 +1,36 @@
+.categoryCard
+    display: flex
+    flex-direction: column
+    width: 100%
+    height: 100%
+    border-radius: 26px
+    background-color: #fff
+    & *
+        font-size: 20px
+    &__title
+        display: flex
+        justify-content: space-between
+        font-weight: 700
+        color: #42474D
+        background-color: #D5E0F5
+        width: 100%
+        padding: 16px 30px
+        border-radius: 26px 26px 0 0
+        cursor: pointer
+        &:hover
+            background-color: #bccff3
+    &__items
+        display: flex
+        flex-direction: column
+        gap: 22px
+        padding: 34px 30px
+    &__item
+        display: flex
+        justify-content: space-between
+        cursor: pointer
+        &:hover span:first-child
+            text-decoration: underline
+    &__name
+        color: #42474D
+    &__count
+        color: #BDBDBD

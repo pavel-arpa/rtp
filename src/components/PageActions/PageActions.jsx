@@ -3,6 +3,7 @@ import menuIcon from '../icons/menu.svg'
 import s from './PageAction.module.sass'
 import SearchInput from "../SearchInput/SearchInput"
 import cart from '../icons/cart.svg'
+import { NavLink } from "react-router-dom"
 
 const PageActions = () => {
     return (
@@ -14,10 +15,10 @@ const PageActions = () => {
             </div>
             <SearchInput />
             <div className={s.pageActions__cartButton}>
-                <div className={s.cart}>
+                <NavLink to='/cart' className={s.cart}>
                     <img src={cart} alt="" />
                     <span>Корзина</span>
-                </div>
+                </NavLink>
             </div>
         </div>
     )

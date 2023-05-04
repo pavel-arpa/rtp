@@ -1,0 +1,28 @@
+.catalog
+    display: flex
+    flex-direction: column
+    justify-content: start
+    width: 100%
+    max-width: 1540px
+    margin: 0 auto
+
+.grid
+    display: flex
+    flex-direction: column
+    gap: 21px
+    margin-top: 85px
+    margin-bottom: 85px
+    &__top
+        display: grid
+        gap: 21px
+        grid-template-columns: 1fr 2fr
+    &__topRight
+        display: grid
+        gap: 21px
+        grid-template-columns: 1fr 1fr
+        & div:last-child
+            grid-area: 2 / 1 / span 2 / span 2
+    &__bottom
+        display: grid
+        gap: 21px
+        grid-template-columns: 1fr 1fr

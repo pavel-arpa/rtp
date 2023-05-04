@@ -1,4 +1,4 @@
-import { Button, Heading } from "@chakra-ui/react";
+import { Button, Heading, Input } from "@chakra-ui/react";
 import AppBreadcrupms from "../../components/AppBreadcrumps/AppBreadcrupms";
 import PageActions from "../../components/PageActions/PageActions";
 import ProductCard from "../../components/ProductCard/ProductCard";
@@ -28,12 +28,30 @@ const Cart = () => {
                     <Button>Перейти к оформлению</Button>
                     <span>Доступные способы и время доставки можно выбрать при оформлении заказа</span>
                     <hr />
-                    <b>Ваша корзина</b>
+                    <div className={s.titleCart}>
+                        <b>Ваша корзина</b>
+                        <span>6 товаров</span>
+                    </div>
+                    <div className={s.list}>
+                        <div className={s.list__item}>
+                            <span>Товары</span>
+                            <span>14 639,17 ₽</span>
+                        </div>
+                        <div className={s.list__item}>
+                            <span>НДС (20%)</span>
+                            <span>2 927,83 ₽</span>
+                        </div>
+                    </div>
                     <hr />
                     <div className={s.toPay}>
                         <b>Всего к оплате</b>
                         <b>17 000 ₽</b>
                     </div>
+                    <div className={s.promocode}>
+                        <Input placeholder='Ввести промокод или сертификат' />
+                        <Button>Применить</Button>
+                    </div>
+                    <Button className={s.summary}>Скачать смету</Button>
                 </div>
             </div>
 

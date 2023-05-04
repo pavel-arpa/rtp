@@ -1,44 +1,166 @@
+@use '../../global/colors'
+
 .productCard
     width: 283px
     background-color: #fff
     padding: 14px
     display: flex
     flex-direction: column
+    &_shadow
+        transition: all 0.3s
+        cursor: pointer
+        width: auto
+        &:hover
+            filter: drop-shadow(0px 0px 22px rgba(0, 0, 0, 0.15))
+        & .image
+            min-height: 228px
+        & .button
+            width: 100%
+    &_big
+        width: 100%
+        flex-direction: row
+        padding: 16px
+        gap: 30px
+        box-shadow: 0px 5px 50px rgba(0, 67, 101, 0.08), 0px 2px 6px rgba(130, 169, 188, 0.08)
 
+.leftSection
+    display: flex
+    flex-direction: column
+    gap: 8px
+
+.rightSection
+    display: flex
+    flex-direction: column
+    gap: 19px
+    width: 100%
+
+.bottomSection
+    display: flex
+    justify-content: space-between
+
+.params
+    display: flex
+    flex-direction: column
+    gap: 4px
+    & div
+        display: flex
+        gap: 7px
+        & span:first-child
+            color: #828D99
+            font-size: 14px
+            font-weight: 500
+        & span:last-child
+            color: #42474D
+            font-size: 14px
+            font-weight: 500
 
 .image
+    position: relative
     min-height: 207px
     background-color: #F0F0F0
     display: flex
     align-items: center
     justify-content: center
-    margin-bottom: 28px
+    &_big
+        min-height: 216px
+        min-width: 274px
+    & div
+        position: absolute
+        top: 0
+        right: 0
+        width: 65px
+        height: 65px
+        display: flex
+        justify-content: center
+        align-items: center
+        color: white
+        background-color: #224386
+        font-size: 18px
+        font-weight: 700
+        border-radius: 0 0 0 16px
+
+
+.dots
+    display: flex
+    justify-content: center
+    &__wrapper
+        display: flex
+        gap: 2px
+    &__dot
+        width: 5px
+        height: 5px
+        border-radius: 50%
+        background-color: #F0F0F0
+        &_active
+            background-color: colors.$bg-color
+
+.title
+    display: flex
+    flex-direction: column
+    gap: 8px
+    & span:last-child
+        font-size: 14px
 
 .text
     color: #A6ACB3
     font-weight: 700
     font-size: 16px
+    cursor: pointer
+    &:hover
+        text-decoration: underline
+    &_bold
+        font-size: 18px
+        color: #42474D
 
 .price
     margin: 50px 0
     display: flex
-    align-items: center
+    align-items: baseline
     gap: 16px
+    &_narrow
+        margin: 12px 0
     &__amount
         color: #42474D
         font-weight: 700
         font-size: 24px
     &__none
-        text-decoration: line-through 
+        text-decoration: line-through
         color: #7E8790
         font-size: 18px
+
+.benefit
+    display: flex
+    flex-direction: column
+    gap: 11px
+    font-size: 16px
+    color: #1DBE40
+    margin-bottom: 21px
+    font-weight: 700
 
 .actions
     display: flex
     align-items: center
+    gap: 15px
+    &_vertical
+        flex-direction: column
+        width: 100%
+        & > *
+            width: 100%
+
+.actionsWrapper
+    display: flex
+    flex-direction: column
+    justify-content: end
+    align-items: end
+    width: 150px
     gap: 15px
 
 .addRemove
     display: flex
     align-items: center
     gap: 8px
+    font-weight: 700
+    color: #42474D
+    &_wide
+        gap: 0px
+        justify-content: space-between

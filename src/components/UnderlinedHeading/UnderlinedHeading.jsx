@@ -1,10 +1,14 @@
 import { Heading } from "@chakra-ui/react";
+import s from './UnderlinedHeading.module.sass'
 
-const UnderlinedHeading = ({ children }) => {
+const UnderlinedHeading = ({ extraText, children }) => {
     return (
-        <Heading fontSize={32} fontWeight={500} color={'cBlue.normal'} textDecoration={'underline'} marginBottom={30}>
-            {children}
-        </Heading>
+        <div className={s.heading}>
+            <Heading fontSize={32} fontWeight={500} color={'cBlue.normal'} marginBottom={30}>
+                <span>{children}</span>&nbsp;
+                <span style={{ color: '#6C7689', fontWeight: 400 }}>{extraText}</span>
+            </Heading>
+        </div>
     )
 }
 
