@@ -27,6 +27,10 @@ import play from '../../components/icons/play.svg'
 
 
 const Home = () => {
+    const systems = [
+        categories.alpha, categories.sigma, categories.omega, categories.betaOrange,
+        categories.delta, categories.beta, categories.betaElite, categories.gamma
+    ]
     return (
         <>
             <div className={s.home}>
@@ -45,7 +49,7 @@ const Home = () => {
                 </div>
 
                 <div className={s.categories}>
-                    {Object.values(categories).map(category => (
+                    {systems.map(category => (
                         <CategoryPresentationCard
                             text={category.name.split(' - ').join(' ')}
                             color={'#ededed'}

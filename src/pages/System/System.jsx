@@ -28,7 +28,7 @@ const System = () => {
                 <PageActions />
             </div>
             <div style={{ margin: '50px 0' }}>
-                <AppBreadcrupms breads={['Главная', 'Результаты поиска']} />
+                <AppBreadcrupms breads={['Главная', 'Каталог', 'Трубы и фитинги из полипропилена']} />
             </div>
             <div className={s.wrapper}>
                 <Sidebar />

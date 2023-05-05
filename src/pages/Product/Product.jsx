@@ -12,6 +12,7 @@ import createCart from '../../components/icons/create_cart.svg'
 import extraActions from '../../components/icons/extra_actions.svg'
 import charsBlockBig from '../../components/icons/charsBlockBig.svg'
 import charsBlock from '../../components/icons/charsBlock.svg'
+import sale from '../../components/images/sale.svg'
 import UnderlinedHeading from "../../components/UnderlinedHeading/UnderlinedHeading";
 import { useState } from "react";
 import ProductCard from "../../components/ProductCard/ProductCard";
@@ -22,6 +23,7 @@ const Product = () => {
     const counts = ['100/25', '50/25']
     const [activeDiameter, setActiveDiameter] = useState(diameters[0])
     const [activeCount, setActiveCount] = useState(counts[0])
+    const [activeImage, setActiveImage] = useState(0)
 
     const handleSetDiameter = (index) => {
         return () => {
@@ -31,6 +33,12 @@ const Product = () => {
     const handleSetCount = (index) => {
         return () => {
             setActiveCount(index)
+        }
+    }
+
+    const handleChooseImage = (index) => {
+        return () => {
+            setActiveImage(index)
         }
     }
     return (
@@ -61,11 +69,19 @@ const Product = () => {
                 <div className={s.card}>
                     <div className={s.images}>
                         <div className={s.images__items}>
-                            {[0, 1, 2, 3, 4, 5].map(img => (
-                                <img src={imgPlcSmall} alt='' />
+                            {[0, 1, 2, 3].map(img => (
+                                <img
+                                    onClick={handleChooseImage(img)}
+                                    src={imgPlcSmall}
+                                    alt=''
+                                    style={activeImage === img ? { border: '3px solid #224386' } : {}}
+                                />
                             ))}
                         </div>
-                        <img src={imgPlc} alt="" />
+                        <div className={s.bigImage}>
+                            <img className={s.bigImage__sale} src={sale} alt="" />
+                            <img src={imgPlc} alt="" />
+                        </div>
                     </div>
                     <div className={s.params}>
                         <span className={s.subHeading}>Диаметр/толщина стенок, мм:</span>
@@ -123,7 +139,7 @@ const Product = () => {
                 <UnderlinedHeading>
                     Описание
                 </UnderlinedHeading>
-                <div style={{marginBottom: '32px'}}>
+                <div style={{ marginBottom: '32px' }}>
                     Трубы из полипропилена для напорного водоснабжения (ХВС, ГВС) и отопления. Обладают отличными прочностными характеристиками и изготавливаются согласно требованиям ГОСТ.
                     RTP располагает самым широким ассортиментом труб и фитингов, что позволяет осуществлять монтаж любой сложности.
                     Трубы из полипропилена для напорного водоснабжения (ХВС, ГВС) и отопления. Обладают отличными прочностными характеристиками и изготавливаются согласно требованиям ГОСТ.
@@ -134,7 +150,7 @@ const Product = () => {
                 <UnderlinedHeading>
                     Характеристики
                 </UnderlinedHeading>
-                <div style={{marginBottom: '191px'}}>
+                <div style={{ marginBottom: '191px' }}>
                     <img src={charsBlockBig} alt='' />
                     <br />
                     <img src={charsBlock} alt='' />
