@@ -41,6 +41,7 @@
     justify-content: space-between
 
 .anchors
+    position: relative
     display: flex
     justify-content: space-between
     font-size: 20px
@@ -49,6 +50,45 @@
     & span:hover
         color: white
         cursor: pointer
+        user-select: none
+
+.menu
+    font-size: 16px
+    background-color: colors.$bg-color
+    &__anchor span
+        display: flex
+        align-items: center
+    &__imageOn
+        display: none
+    &__imageOff
+        display: block
+    &__item
+        &:hover
+            & .menu__imageOn
+                display: flex
+                align-items: center
+                justify-content: center
+                background-color: #fff
+                border-radius: 50%
+                border: 1px solid #fff
+            & .menu__imageOff
+                display: none
+
+button.menu__item
+    background-color: transparent
+    height: 46px
+    display: flex
+    gap: 12px
+    border-top: 1px solid #55769B
+    font-size: 16px
+
+
+div.menu__list
+    padding: 20px 15px 4px 15px
+    margin-left: -15px
+    border: none
+    border-radius: 0px 0px 23px 23px
+    background-color: colors.$bg-color
 
 .phone
     display: flex

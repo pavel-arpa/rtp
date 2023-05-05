@@ -25,6 +25,22 @@ import badgeBetaOrange from './components/images/beta-orange.svg'
 import badgeBeta from './components/images/beta.svg'
 import badgeGamma from './components/images/gamma.svg'
 
+import iconAlpha from './components/icons/systems/on/alpha.svg'
+import iconSigma from './components/icons/systems/on/sigma.svg'
+import iconDelta from './components/icons/systems/on/delta.svg'
+import iconOmega from './components/icons/systems/on/omega.svg'
+import iconBetaElite from './components/icons/systems/on/beta-elite.svg'
+import iconBetaOrange from './components/icons/systems/on/beta-orange.svg'
+import iconBeta from './components/icons/systems/on/beta.svg'
+import iconGamma from './components/icons/systems/on/gamma.svg'
+
+import iconAlphaOff from './components/icons/systems/off/alpha.svg'
+import iconSigmaOff from './components/icons/systems/off/sigma.svg'
+import iconDeltaOff from './components/icons/systems/off/delta.svg'
+import iconOmegaOff from './components/icons/systems/off/omega.svg'
+import iconBetaOff from './components/icons/systems/off/beta.svg'
+import iconGammaOff from './components/icons/systems/off/gamma.svg'
+
 
 export const categories = {
     alpha: {
@@ -33,6 +49,10 @@ export const categories = {
         bg: bgAlpha,
         bigBg: bigBgAlpha,
         badge: badgeAlpha,
+        icon: {
+            on: iconAlpha,
+            off: iconAlphaOff
+        },
         color: '#349ED4',
         items: [
             { name: 'Фитинги', count: 12 },
@@ -51,6 +71,10 @@ export const categories = {
         bg: bgSigma,
         bigBg: bigBgSigma,
         badge: badgeSigma,
+        icon: {
+            on: iconSigma,
+            off: iconSigmaOff
+        },
         color: '#003C47',
         items: [
             { name: 'Фитинги резьбовые никелированные', count: 0 },
@@ -66,6 +90,10 @@ export const categories = {
         bg: bgDelta,
         bigBg: bigBgDelta,
         badge: badgeDelta,
+        icon: {
+            on: iconDelta,
+            off: iconDeltaOff
+        },
         color: '#B92F2C',
         items: [
             { name: 'Фитинги', count: 12 },
@@ -81,6 +109,10 @@ export const categories = {
         bg: bgOmega,
         bigBg: bigBgOmega,
         badge: badgeOmega,
+        icon: {
+            on: iconOmega,
+            off: iconOmegaOff
+        },
         color: '#23A2AB',
         items: [
             { name: 'Труба РЕ-Ха', count: 88 },
@@ -94,6 +126,10 @@ export const categories = {
         bg: bgBetaElite,
         bigBg: bigBgBetaElite,
         badge: badgeBetaElite,
+        icon: {
+            on: iconBetaElite,
+            off: iconBetaOff
+        },
         color: '#7E8E97',
         items: [
             { name: 'Фитинги', count: 12 },
@@ -108,6 +144,10 @@ export const categories = {
         bg: bgBetaOrange,
         bigBg: bigBgBetaOrange,
         badge: badgeBetaOrange,
+        icon: {
+            on: iconBetaOrange,
+            off: iconBetaOff
+        },
         color: '#80C2EC',
         items: [
             { name: 'Фитинги', count: 12 },
@@ -122,6 +162,10 @@ export const categories = {
         bg: bgBeta,
         bigBg: bigBgBeta,
         badge: badgeBeta,
+        icon: {
+            on: iconBeta,
+            off: iconBetaOff
+        },
         color: '#EE741D',
         items: [
             { name: 'Фитинги', count: 12 },
@@ -137,6 +181,10 @@ export const categories = {
         bg: bgGamma,
         bigBg: bigBgGamma,
         badge: badgeGamma,
+        icon: {
+            on: iconGamma,
+            off: iconGammaOff
+        },
         color: '#2A4A8A',
         items: [
             { name: 'Фитинги', count: 12 },
